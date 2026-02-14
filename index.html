@@ -1,14 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>Our Wedding</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Řekneme si ano</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Štika & Štikutsk</h1>
-  <p>June 15, 2026</p>
+<section class="hero">
+  <div class="hero-grid">
+
+    <div class="hero-image">
+      <img src="pics/villa.png" alt="Winternitzova vila">
+    </div>
+
+    <div class="hero-text">
+
+      <h1 class="names">
+        <span class="name-top">Sára</span>
+        <span class="amp">&</span>
+        <span class="name-bottom">Ondřej</span>
+      </h1>
+
+      <p class="date">26. září 2026</p>
+
+      <p class="location">
+        WINTERNITZOVA VILA<br>
+        PRAHA
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="info light section-left">
+  <div class="section-wrapper">
+    <h2>Program dne</h2>
+    <div class="section-line"></div>
+
+    <div class="section-content">
+      <div class="row"><div class="time">15:00</div><div>Obřad</div></div>
+      <div class="row"><div class="time">17:00</div><div>Slavnostní přípitek</div></div>
+      <div class="row"><div class="time">19:00</div><div>Večeře</div></div>
+      <div class="row"><div class="time">21:00</div><div>Večerní oslava</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="info dark section-right">
+  <div class="section-wrapper">
+    <h2>Místo konání</h2>
+    <div class="section-line"></div>
+
+    <div class="section-content">
+      <p>Winternitzova vila</p>
+      <p>Na Cihlářce 10, Praha 5</p>
+
+      <div class="map-wrapper">
+        <iframe 
+          src="https://www.google.com/maps?q=Winternitzova+vila+Praha&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info light section-left">
+  <div class="section-wrapper">
+    <h2>Ubytování</h2>
+    <div class="section-line"></div>
+    <div class="section-content">
+      <p>Doporučené hotely budou doplněny.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info dark section-right">
+  <div class="section-wrapper">
+    <h2>Dress code</h2>
+    <div class="section-line"></div>
+
+    <div class="section-content">
+      <p>Elegantní odpolední / divadelní styl.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info light section-left">
+  <div class="section-wrapper">
+    <h2>Dary</h2>
+    <div class="section-line"></div>
+
+    <div class="section-content">
+      <p>Vaše přítomnost je pro nás tím největším darem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info dark align-center">
+  <h2>RSVP</h2>
+  <form class="rsvp-form">
+    <input type="text" placeholder="Jméno a příjmení" required>
+    <input type="email" placeholder="Email" required>
+    <select required>
+      <option value="">Potvrzení účasti</option>
+      <option value="ano">Ano, přijdu</option>
+      <option value="ne">Bohužel nemohu</option>
+    </select>
+    <button type="submit">Odeslat</button>
+  </form>
+</section>
+
+<section class="info light align-center">
+  <h2>Důležité kontakty</h2>
+  <p>
+    Jméno a příjmení<br>
+    Telefon: +420 XXX XXX XXX<br>
+    E-mail: abecedefgh@ijklmn.com<br>
+  </p>
+</section>
+
+<footer>
+  <p>26. září 2026 · Winternitzova vila · Praha</p>
+</footer>
 
 </body>
 </html>
+
+
+<!-- 
+takhle se vkladaji linky do textu co se oteviraji v novym okne <a href="https://www.czechitas.cz" target="_blank"> 
+  <a href="mailto:muj@email.cz">Odkaz na email</a>
+  -->
