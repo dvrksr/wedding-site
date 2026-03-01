@@ -38,6 +38,40 @@
   </div>
 </section>
 
+<section class="info dark align-center">
+  <h2>RSVP</h2>
+  <div class="section-content">
+    <p>.</p>
+
+    <div id="countdown" style="font-size: 24px; margin-top: 20px;"></div>
+  </div>
+</section>
+
+<script>
+  // April 15 this year at 23:59:59
+  const targetDate = new Date(new Date().getFullYear(), 3, 15, 23, 59, 59).getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      document.getElementById("countdown").innerHTML = "RSVP closed";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m";
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 60000); // updates every minute
+</script>
+
 <section class="info light section-left">
   <div class="section-wrapper">
     <h2>Program dne</h2>
@@ -88,10 +122,10 @@
     <div class="section-line"></div>
 
     <div class="section-content">
-      <p>Chceme hlavně, abyste se cítili dobře.<br> 
-         Žádné barevné schéma není, avšak tmavší a studenější barvy jsou vítány.<br>
-         Ty pastelové si po létě rády odpočinou. Černá není nepřítel.<br>
-        Bude konec září, něco přes sebe na večer je určitě fajn.</p>
+      <p>Chceme, abyste se cítili dobře.<br> 
+         Naše svatba žádné barevné schéma nemá, ovšem tmavší a studenější barvy jsou velmi vítány.<br>
+         Pastelové barvy a květinové vzory si po létě mohou odpočinout. Černá není nepřítel.<br>
+         Taky bude konec září, takže něco přes sebe na večer je určitě fajn.</p>
     </div>
   </div>
 </section>
@@ -105,20 +139,6 @@
       <p>Vaše přítomnost je pro nás tím největším darem.</p>
     </div>
   </div>
-</section>
-
-<section class="info dark align-center">
-  <h2>RSVP</h2>
-  <form class="rsvp-form">
-    <input type="text" placeholder="Jméno a příjmení" required>
-    <input type="email" placeholder="Email" required>
-    <select required>
-      <option value="">Potvrzení účasti</option>
-      <option value="ano">Ano, přijdu</option>
-      <option value="ne">Bohužel nemohu</option>
-    </select>
-    <button type="submit">Odeslat</button>
-  </form>
 </section>
 
 <section class="info light align-center">
