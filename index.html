@@ -7,6 +7,13 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- HEART FAVICON -->
+<link rel="icon" type="image/svg+xml" 
+href='data:image/svg+xml,
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<text y=".9em" font-size="90">♥</text>
+</svg>'>
 </head>
 
 <body>
@@ -42,13 +49,11 @@
   <h2>RSVP</h2>
   <div class="section-content">
     <p>.</p>
-
     <div id="countdown" style="font-size: 24px; margin-top: 20px;"></div>
   </div>
 </section>
 
 <script>
-  // April 15 this year at 23:59:59
   const targetDate = new Date(new Date().getFullYear(), 3, 15, 23, 59, 59).getTime();
 
   function updateCountdown() {
@@ -69,7 +74,7 @@
   }
 
   updateCountdown();
-  setInterval(updateCountdown, 60000); // updates every minute
+  setInterval(updateCountdown, 60000);
 </script>
 
 <section class="info light section-left">
@@ -93,7 +98,8 @@
 
     <div class="section-content">
       <p>Winternitzova vila</p>
-      <p>Na Cihlářce 10, Praha 5</p>
+      <p>Na Cihlářce 10</p>
+      <p>Praha 5</p>
 
       <div class="map-wrapper">
         <iframe 
@@ -102,6 +108,7 @@
           loading="lazy">
         </iframe>
       </div>
+
     </div>
   </div>
 </section>
@@ -111,7 +118,7 @@
     <h2>Ubytování</h2>
     <div class="section-line"></div>
     <div class="section-content">
-      <p>Doporučené hotely budou doplněny.</p>
+      <p>Postupně doplníme možnosti ubytování v okolí místa konání.</p>
     </div>
   </div>
 </section>
@@ -122,10 +129,11 @@
     <div class="section-line"></div>
 
     <div class="section-content">
-      <p>Chceme, abyste se cítili dobře.<br> 
-         Naše svatba žádné barevné schéma nemá, ovšem tmavší a studenější barvy jsou velmi vítány.<br>
-         Pastelové barvy a květinové vzory si po létě mohou odpočinout. Černá není nepřítel.<br>
-         Taky bude konec září, takže něco přes sebe na večer je určitě fajn.</p>
+      <p>Žádné striktní barevné schéma nemáme.<br>
+         Záleží nám hlavně na tom, abyste se cítili dobře.<br>
+         Tmavší a chladnější tóny jsou však vítané. Černá není nepřítel.<br> 
+         Pastelové barvy prosím nechte po létě odpočívat doma. Zaslouží si to.<br>
+         Konec září může být chladný. Večer se bude hodit něco na přehození.</p>
     </div>
   </div>
 </section>
@@ -136,7 +144,8 @@
     <div class="section-line"></div>
 
     <div class="section-content">
-      <p>Vaše přítomnost je pro nás tím největším darem.</p>
+      <p>Za léta společného života jsme domácnost už poskládali. Máme toastovač, mixér tyčový i klasický a také varnou konvici. A pánve. Opravdu hodně pánví. Místa v kuchyni moc není.</p>
+      <p>Místo věcí nás nejvíc potěší finanční příspěvek, který rádi použijeme na líbánky.</p>
     </div>
   </div>
 </section>
@@ -159,6 +168,7 @@
 
 
 <!-- 
-takhle se vkladaji linky do textu co se oteviraji v novym okne <a href="https://www.janevimabytonebylodivny.cz" target="_blank"> 
-  <a href="mailto:muj@email.cz">Odkaz na email</a>
-  -->
+takhle se vkladaji linky do textu co se oteviraji v novym okne 
+<a href="https://www.janevimabytonebylodivny.cz" target="_blank"> 
+<a href="mailto:muj@email.cz">Odkaz na email</a>
+-->
