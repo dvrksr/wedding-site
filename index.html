@@ -4,110 +4,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Řekneme si ano</title>
-
+ 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
-<!-- FIXED HEART FAVICON -->
+ 
 <link rel="icon" type="image/svg+xml"
 href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
-
+ 
 </head>
-
+ 
 <body>
-
+ 
 <section class="hero">
   <div class="hero-grid">
-
+ 
     <div class="hero-image">
       <img src="pics/villa.png" alt="Winternitzova vila">
     </div>
-
+ 
     <div class="hero-text">
-
+ 
       <h1 class="names">
         <span class="name-top">Sára</span>
         <span class="amp">&</span>
         <span class="name-bottom">Ondřej</span>
       </h1>
-
+ 
       <p class="date"><strong>26. září 2026</strong></p>
-
+ 
       <p class="location">
         WINTERNITZOVA VILA<br>
         PRAHA
       </p>
-
+ 
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <section class="info dark align-center">
   <h2>RSVP</h2>
   <div class="section-content">
-    <p> Začneme tím nejdůležitějším.<br>
-        Prosíme o potvrzení účasti prostřednictvím <a href="https://forms.gle/kZfQWJViaMoNERqX6" target="_blank">FORMULÁŘE</a>.<br> 
-        Kapacita místa je omezená a proto bychom měli rádi co nejdříve přehled, kolik se nás sejde.<br> 
-        Formulář prosím vyplňte do 15. června 2026.<br>
-    </p>
-    <!-- <div id="countdown" style="font-size: 24px; margin-top: 20px;"></div>
+    <p>Začneme tím nejdůležitějším.<br>
+       Prosíme o potvrzení účasti prostřednictvím <a href="https://forms.gle/kZfQWJViaMoNERqX6" target="_blank">FORMULÁŘE</a>.<br>
+       Formulář prosím vyplňte do 15. června 2026.</p>
   </div>
 </section>
-
-<script>
-  const targetDate = new Date(new Date().getFullYear(), 3, 15, 23, 59, 59).getTime();
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance <= 0) {
-      document.getElementById("countdown").innerHTML = "RSVP closed";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((distance / (1000 * 60)) % 60);
-
-    document.getElementById("countdown").innerHTML =
-      days + "d " + hours + "h " + minutes + "m";
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 60000);
-</script>-->
-
+ 
 <section class="info light section-left">
   <div class="section-wrapper">
     <h2>Program dne</h2>
     <div class="section-line"></div>
-
+ 
     <div class="section-content">
-      <p> Celý program bude upřesněn.
-    </p>
+      <p>Celý program bude upřesněn.</p>
       <div class="row"><div class="time">12:00</div><div>Příchod hostů</div></div>
       <div class="row"><div class="time">13:00</div><div>Obřad</div></div>
-      <!-- <div class="row"><div class="time">17:00</div><div>Slavnostní přípitek</div></div>
-      <div class="row"><div class="time">19:00</div><div>Večeře</div></div>
-      <div class="row"><div class="time">21:00</div><div>Večerní oslava</div></div>-->
     </div>
   </div>
 </section>
-
+ 
 <section class="info dark section-right">
   <div class="section-wrapper">
     <h2>Místo konání</h2>
     <div class="section-line"></div>
-
+ 
     <div class="section-content">
       <p>Winternitzova vila</p>
       <p>Na Cihlářce 10</p>
       <p>Praha 5</p>
-
+ 
       <div class="map-wrapper">
-        <iframe 
+        <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.010365885446!2d14.385949575886457!3d50.06736751487346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95ad24d577af%3A0x13643216f5b8908!2sWinternitzova%20vila!5e0!3m2!1scs!2scz!4v1772387296188!5m2!1scs!2scz"
           width="400"
           height="300"
@@ -117,65 +85,68 @@ href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <section class="info light section-left">
   <div class="section-wrapper">
     <h2>Ubytování</h2>
     <div class="section-line"></div>
     <div class="section-content">
-      <p>Pro zájemce postupně doplníme možnosti ubytování v okolí místa konání.
-      </p>
+      <p>Pro zájemce postupně doplníme možnosti ubytování v okolí místa konání.</p>
     </div>
   </div>
 </section>
-
+ 
 <section class="info dark section-right">
   <div class="section-wrapper">
     <h2>Dress code</h2>
     <div class="section-line"></div>
-
+ 
     <div class="section-content">
-      <p>Žádné striktní barevné schéma nemáme.<br>
+      <p>Žádné barevné schéma nemáme.<br>
          Záleží nám hlavně na tom, abyste se cítili dobře.<br>
-         Tmavší a chladnější tóny jsou však vítané. Černá není nepřítel.<br> 
-         Pastelové barvy prosím nechte po létě odpočívat doma. Zaslouží si to.<br>
-         Konec září může být chladný. Večer se bude hodit něco na přehození.</p>
+         Budeme však rádi, když pastelové a světlé barvy necháte po létě odpočívat.<br>
+         Tmavší, večerní barvy, dokonce i černá, jsou naopak velmi vítány.<br>
+         Konec září může být chladný. Večer se bude hodit něco přes sebe.</p>
     </div>
   </div>
 </section>
-
+ 
 <section class="info light section-left">
   <div class="section-wrapper">
     <h2>Dary</h2>
     <div class="section-line"></div>
-
+ 
     <div class="section-content">
       <p>Za léta společného života jsme domácnost už poskládali. Máme gril, airfryer, mixér tyčový i klasický a také varnou konvici. A pánve. Opravdu hodně pánví. Místa v kuchyni moc není.</p>
-      <p>Místo věcí nás nejvíc potěší finanční příspěvek, který rádi použijeme na líbánky.</p>
+      <p>Nejvíc náš potěší finanční příspěvek, který rádi použijeme na líbánky.</p>
     </div>
   </div>
 </section>
-
-<section class="info light align-center">
+ 
+<section class="info dark align-center">
   <h2>Důležité kontakty</h2>
   <p>
-    Jméno a příjmení<br>
-    Telefon: +420 XXX XXX XXX<br>
-    E-mail: abecedefgh@ijklmn.com<br>
+    Ondřej Chlupáček<br>
+    Telefon: +420 733 197 812<br>
+    E-mail: <a href="mailto:chlupackovi2026@gmail.com">chlupackovi2026@gmail.com</a>
+  </p>
+  <p>
+    Sára Dvořáková<br>
+    Telefon: +420 722 935 499<br>
+    E-mail: <a href="mailto:chlupackovi2026@gmail.com">chlupackovi2026@gmail.com</a>
   </p>
 </section>
-
+ 
 <footer>
   <p>&copy; Sára 2026 · První web v životě · Asi i poslední</p>
 </footer>
-
+ 
 </body>
 </html>
-
 <!-- 
 takhle se vkladaji linky do textu co se oteviraji v novym okne 
 <a href="https://www.janevimabytonebylodivny.cz" target="_blank"> 
