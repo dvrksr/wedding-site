@@ -216,34 +216,6 @@ section {
   border: 0;
 }
 
-/* RSVP */
-
-.rsvp-form {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.rsvp-form input,
-.rsvp-form select {
-  padding: 12px;
-  border: 1px solid currentColor;
-  background: transparent;
-  color: inherit;
-}
-
-.rsvp-form button {
-  padding: 14px;
-  border: none;
-  background: var(--brick);
-  color: white;
-  cursor: pointer;
-}
-
 /* FOOTER */
 
 footer {
@@ -267,6 +239,18 @@ footer {
 
 .info.dark a:hover {
   border-bottom: 1px solid var(--ivory);
+}
+
+.info.light a {
+  color: var(--brick);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.info.light a:hover {
+  border-bottom: 1px solid var(--brick);
 }
 
 /* ================== MOBILE ================== */
