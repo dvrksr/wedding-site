@@ -203,6 +203,20 @@ section {
   font-weight: 500;
 }
 
+/* Q&A */
+
+.qa {
+  margin-bottom: 28px;
+}
+
+.qa p {
+  margin: 0;
+}
+
+.qa .q {
+  font-weight: 500;
+}
+
 /* MAP */
 
 .map-wrapper {
